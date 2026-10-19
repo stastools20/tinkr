@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tinkr — WoW Unlocker for macOS and Windows | Lua Unlocker for Retail & Classic</title>
+    <meta name="description" content="Tinkr is a WoW unlocker for macOS and Windows that enables Lua scripts, automation, navigation, ESP and custom bot development. Supports all Retail builds and all Classic versions (TBC, WotLK, Cata, SoD).">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="app.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Tinkr",
+  "alternateName": ["Tinkr WoW", "Tinkr Unlocker"],
+  "url": "https://tinkr.website/"
+}
+</script>
+<link rel="canonical" href="https://tinkr.website/" />
+</head>
+<body class="font-sans antialiased">
+<div class="min-h-screen">
+    <main class="static">
+        <div class="bg-blue-500 dark:bg-tdark-700">
+        <div class="px-3 py-3 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center justify-between">
+                <div class="flex items-center flex-1 w-0">
+                    <span class="flex hidden p-2 text-blue-600 bg-white rounded-lg dark:bg-tdark-800 dark:text-tdark-300 sm:inline">
+                        <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path class="fa-primary" d="M48 32H197.5C214.5 32 230.7 38.74 242.7 50.75L410.7 218.7C435.7 243.7 435.7 284.3 410.7 309.3L277.3 442.7C252.3 467.7 211.7 467.7 186.7 442.7L18.75 274.7C6.743 262.7 0 246.5 0 229.5V80C0 53.49 21.49 32 48 32L48 32zM112 176C129.7 176 144 161.7 144 144C144 126.3 129.7 112 112 112C94.33 112 80 126.3 80 144C80 161.7 94.33 176 112 176z"/><path class="fa-secondary" d="M311.1 38.93C320.5 29.61 335.7 29.7 344.1 39.13L472.8 168.4C525.1 221.4 525.1 306.6 472.8 359.6L360.8 472.9C351.5 482.3 336.3 482.4 326.9 473.1C317.4 463.8 317.4 448.6 326.7 439.1L438.6 325.9C472.5 291.6 472.5 236.4 438.6 202.1L310.9 72.87C301.5 63.44 301.6 48.25 311.1 38.93V38.93z"/></svg>                    </span>
+                                    <p class="ml-3 font-medium text-white truncate">
+                        <span class="inline md:hidden">
+                            Tinkr All-In-One!
+                        </span>
+                        <span class="hidden md:inline">
+                            Purchase the new all in one token, a single token for all game versions!
+                        </span>
+                    </p>
+                </div>
+                <div class="flex-shrink-0 order-3 w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">
+                    <a href=""
+                       class="flex items-center justify-center px-4 py-2 text-sm font-bold text-blue-500 bg-white border border-transparent rounded-md shadow-sm dark:text-tdark-400 dark:bg-tdark-800 hover:bg-blue-50 dark:hover:bg-tdark-900">
+                        Purchase Now
+                    </a>
+                </div>
+                <div class="flex-shrink-0 order-2 sm:order-3 sm:ml-3"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="pt-8 pb-10 bg-white dark:bg-tdark-800">
+        <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+            <div class="lg:text-center">
+<div class="logo2" style="
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    font-family: 'Inter', 'Roboto', 'Open Sans', sans-serif;
+    font-size:36px;
+    font-weight:600;
+    color:#ff586e;
+">
+    <img src="logo.png" alt="tinkr logo" style="
+        width:55px;
+        height:55px;
+        display:block;
+    ">
+    
+    <h1 style="margin:0; font-size:36px; font-weight:600; color:#ff586e;">
+        Tinkr — WoW Unlocker for macOS and Windows
+    </h1>
+
+</div>
+
+<div class="mt-10">
+    <div class="max-w-3xl mx-auto">
+        <div class="flow-root px-6 py-6 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+            <p class="text-lg text-tdark-500 dark:text-tdark-300 text-center leading-relaxed">
+                Tinkr is a modern WoW unlocker for macOS and Windows that allows Lua scripts inside World of Warcraft.
+                It is an all-in-one unlocker solution with navigation, combat rotation, ESP overlay and automation API
+                for all Retail and Classic WoW versions (macOS Intel, Apple Silicon and Windows).
+            </p>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+
+            <div class="mt-10 text-center">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="pt-6">
+                        <div class="flow-root h-full px-6 pb-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+                            <div class="-mt-6">
+                                <div>
+                                <span
+                                    class="inline-flex items-center justify-center p-3 text-white rounded-md shadow-lg bg-tinkr">
+                                    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path class="fa-primary" d="M512 96C512 160 416 256 416 256C416 256 320 160 320 96C320 42.98 362.1 0 416 0C469 0 512 42.98 512 96zM416 64C398.3 64 384 78.33 384 96C384 113.7 398.3 128 416 128C433.7 128 448 113.7 448 96C448 78.33 433.7 64 416 64zM192 352C192 416 96 512 96 512C96 512 0 416 0 352C0 298.1 42.98 256 96 256C149 256 192 298.1 192 352zM96 320C78.33 320 64 334.3 64 352C64 369.7 78.33 384 96 384C113.7 384 128 369.7 128 352C128 334.3 113.7 320 96 320z"/><path class="fa-secondary" d="M416 256H320C302.3 256 288 270.3 288 288C288 305.7 302.3 320 320 320H416C469 320 512 362.1 512 416C512 469 469 512 416 512H96C96 512 124.1 483.9 149.9 448H416C433.7 448 448 433.7 448 416C448 398.3 433.7 384 416 384H320C266.1 384 224 341 224 288C224 234.1 266.1 192 320 192H362.1C387.9 227.9 416 256 416 256z"/></svg>                                </span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-medium tracking-tight text-tdark-900 dark:text-tdark-200">Navigation</h3>
+                                <p class="mt-3 text-base text-tdark-500 dark:text-tdark-300">
+                                    Tinkr exposes a complete navigation API including mesh access, route optimization and automatic unstuck routines for reliable movement in any scenario.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root h-full px-6 pb-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+                            <div class="-mt-6">
+                                <div>
+                                <span
+                                    class="inline-flex items-center justify-center p-3 text-white rounded-md shadow-lg bg-tinkr">
+                                    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path class="fa-primary" d="M80 128C80 92.65 108.7 64 144 64H304C339.3 64 368 92.65 368 128V256C368 291.3 339.3 320 304 320H144C108.7 320 80 291.3 80 256V128zM160 128C142.3 128 128 142.3 128 160C128 177.7 142.3 192 160 192C177.7 192 192 177.7 192 160C192 142.3 177.7 128 160 128zM288 192C305.7 192 320 177.7 320 160C320 142.3 305.7 128 288 128C270.3 128 256 142.3 256 160C256 177.7 270.3 192 288 192zM160 272C168.8 272 176 264.8 176 256C176 247.2 168.8 240 160 240C151.2 240 144 247.2 144 256C144 264.8 151.2 272 160 272zM224 240C215.2 240 208 247.2 208 256C208 264.8 215.2 272 224 272C232.8 272 240 264.8 240 256C240 247.2 232.8 240 224 240zM288 272C296.8 272 304 264.8 304 256C304 247.2 296.8 240 288 240C279.2 240 272 247.2 272 256C272 264.8 279.2 272 288 272zM0 448C0 394.1 42.98 352 96 352H352C405 352 448 394.1 448 448V480C448 497.7 433.7 512 416 512H352V448C352 430.3 337.7 416 320 416H128C110.3 416 96 430.3 96 448V512H32C14.33 512 0 497.7 0 480V448z"/><path class="fa-secondary" d="M240 64H208V16C208 7.164 215.2 0 224 0C232.8 0 240 7.164 240 16V64zM48 144V240C48 248.8 40.84 256 32 256C23.16 256 16 248.8 16 240V144C16 135.2 23.16 128 32 128C40.84 128 48 135.2 48 144zM176 512H144V464C144 455.2 151.2 448 160 448C168.8 448 176 455.2 176 464V512zM240 512H208V464C208 455.2 215.2 448 224 448C232.8 448 240 455.2 240 464V512zM288 448C296.8 448 304 455.2 304 464V512H272V464C272 455.2 279.2 448 288 448zM432 240C432 248.8 424.8 256 416 256C407.2 256 400 248.8 400 240V144C400 135.2 407.2 128 416 128C424.8 128 432 135.2 432 144V240z"/></svg>                                </span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-medium tracking-tight text-tdark-900 dark:text-tdark-200">Automation</h3>
+                                <p class="mt-3 text-base text-tdark-500 dark:text-tdark-300">
+                                    From simple gathering routines to full quest workflows - the Automator API gives you everything needed for reliable in-game automation.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root h-full px-6 pb-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+                            <div class="-mt-6">
+                                <div>
+                                <span
+                                    class="inline-flex items-center justify-center p-3 text-white rounded-md shadow-lg bg-tinkr">
+                                    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path class="fa-primary" d="M288 64v431.1C288 504.8 280.8 512 272 512h-32C231.2 512 224 504.8 224 496V64c0-17.67 14.33-32 32-32S288 46.33 288 64z"/><path class="fa-secondary" d="M101 13.61c-3.125-13-17.66-18.13-26.78-8.876C28.63 50.86 0 117.6 0 192s28.62 141.1 74.25 187.3c9.125 9.252 23.66 4.126 26.78-8.876c5.404-22.65 15.54-42.94 29.19-59.58C152.9 283.2 188.3 269.1 224 269.1V114.9c-35.74 0-71.12-14.03-93.78-41.67C116.6 56.55 106.4 36.25 101 13.61zM512 160.9c-6.854-61.57-33.46-116.3-72.63-155.8c-9.139-9.209-24.54-4.087-27.58 8.524c-6.09 25.24-18.08 47.59-34.33 65.18c-22.41 24.26-55.3 36.07-88.33 36.07H288v154.3h1.127c33.03 0 65.92 11.81 88.33 36.07c16.25 17.59 28.24 39.93 34.33 65.18c3.043 12.61 18.44 17.73 27.58 8.523C478.5 339.4 505.1 284.7 512 223.1L449.3 192L512 160.9z"/></svg>                                </span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-medium tracking-tight text-tdark-900 dark:text-tdark-200">Combat</h3>
+                                <p class="mt-3 text-base text-tdark-500 dark:text-tdark-300">
+                                    Build custom combat logic or use supported community scripts to run optimized rotations and perform at your best.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root h-full px-6 pb-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+                            <div class="-mt-6">
+                                <div>
+                                <span
+                                    class="inline-flex items-center justify-center p-3 text-white rounded-md shadow-lg bg-tinkr">
+                                    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path class="fa-primary" d="M518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z"/><path class="fa-secondary" d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79z"/></svg>                                </span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-medium tracking-tight text-tdark-900 dark:text-tdark-200">Scripting</h3>
+                                <p class="mt-3 text-base text-tdark-500 dark:text-tdark-300">
+                                    The scripting API lets you build tools ranging from visual radars to complete automation flows - simple to start, limitless to scale.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root h-full px-6 pb-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+                            <div class="-mt-6">
+                                <div>
+                                <span
+                                    class="inline-flex items-center justify-center p-3 text-white rounded-md shadow-lg bg-tinkr">
+                                    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path class="fa-primary" d="M314.9 231C318.2 238.7 320 247.1 320 256C320 291.3 291.3 320 256 320C220.7 320 192 291.3 192 256C192 220.7 220.7 192 256 192C264.9 192 273.3 193.8 280.1 197.1L463 15.03C472.4 5.657 487.6 5.657 496.1 15.03C506.3 24.4 506.3 39.6 496.1 48.97L314.9 231z"/><path class="fa-secondary" d="M350.9 127.2L304.8 173.3C290.5 164.8 273.8 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352C309 352 352 309 352 256H416C416 329.5 366.4 391.5 298.8 410.2C290.8 394.7 274.7 384 256 384C237.3 384 221.2 394.7 213.2 410.2C161.6 395.9 120.4 356.4 103.9 305.7C118.3 297.4 128 281.8 128 264C128 244.6 116.5 227.9 99.99 220.3C116.2 149.1 179.9 96 256 96C291.5 96 324.3 107.6 350.9 127.2V127.2zM373.7 104.3C341.2 79.05 300.4 64 256 64C163.1 64 85.66 129.9 67.85 217.6C47.22 222.9 32 241.7 32 264C32 287.8 49.35 307.6 72.1 311.4C91.43 375.7 143.6 425.8 209.1 442.2C213.8 463.8 233 480 256 480C278.1 480 298.2 463.8 302.9 442.2C386.3 421.3 448 345.9 448 256H512C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C318.1 0 374.9 22.08 419.3 58.8L373.7 104.3z"/></svg>                                </span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-medium tracking-tight text-tdark-900 dark:text-tdark-200">ESP</h3>
+                                <p class="mt-3 text-base text-tdark-500 dark:text-tdark-300">
+                                   Draw shapes, text and overlays directly on world objects for real-time visual insight and total awareness.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root h-full px-6 pb-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+                            <div class="-mt-6">
+                                <div>
+                                <span
+                                    class="inline-flex items-center justify-center p-3 text-white rounded-md shadow-lg bg-tinkr">
+                                    <svg class="w-6 h-6" fill="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path d="M295.92 88q-14 13-37 19a116.69 116.69 0 0 1-35 5l-15-1a128.32 128.32 0 0 1 0-32q4-36 23-55 14-13 37-19a116.69 116.69 0 0 1 35-5l15 1 1 15a117.29 117.29 0 0 1-5 35q-6 23-19 37z" class="fa-secondary"/><path d="M350.86 129q39 7 63.92 42 22 31 30 78a248.7 248.7 0 0 1-1 86q-12 71-47.94 119-43 58-107.87 58-16 0-35-10a56.45 56.45 0 0 0-57.97 0q-19 10-35 10-64.85 0-107.8-58-36-48-47.94-119a248.7 248.7 0 0 1-1-86q8-47 30-78 25-35 63.92-42 24-4 65.92 7 36 10 60.93 24 25-14 60.93-24 41.93-11 65.9-7z" class="fa-primary"/></svg>                                </span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-medium tracking-tight text-tdark-900 dark:text-tdark-200">Exclusive</h3>
+                                <p class="mt-3 text-base text-tdark-500 dark:text-tdark-300">
+                                    <b>The first of its kind on macOS - now available on Windows.</b><br />
+Works on Intel and Apple Silicon Macs, plus Windows PCs, delivering the same high performance and security on any device.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="pt-6 md:col-span-2 lg:col-span-3">
+  <div class="flow-root h-full px-6 pb-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+
+    <style>
+      .info-row {
+        display:flex;
+        align-items:flex-start;
+        gap:50px;
+      }
+
+      .info-left img {
+        display:block;
+        width:auto;
+        height:auto;
+        max-width:100%;
+        position:relative;
+        left:30px;  
+        top:25px;
+      }
+
+      .info-right {
+        margin-left:40px; 
+        margin-top:30px; 
+        flex:1; 
+        text-align:left;
+      }
+
+      .info-right h2 {
+        margin:0 0 12px 0; 
+        color:#ff3333; 
+        font-weight:900; 
+        font-size:48px; 
+        line-height:1;
+      }
+
+      .info-right ul {
+        list-style:none; 
+        margin:0; 
+        padding:0;
+      }
+
+      .info-right li {
+        color:#ff3333; 
+        font-weight:800; 
+        font-size:36px; 
+        margin:0 0 8px 0; 
+        line-height:1.15;
+      }
+
+.info-images {
+  display:flex;
+  gap:20px;
+  align-items:center;
+  margin-top:30px;
+}
+      .info-images img {
+        display:block;
+        width:auto;
+        height:auto;
+        max-width:450px;
+      }
+
+      @media(max-width:980px){
+        .info-row { flex-direction:column; gap:20px; }
+        .info-left img { left:0; top:0; width:100%; }
+        .info-right { margin-left:0; margin-top:18px; }
+        .info-right h2 { font-size:32px; }
+        .info-right li { font-size:18px; }
+        .info-images { flex-direction:column; }
+        .info-images img { max-width:100%; }
+      }
+    </style>
+
+    <div class="info-row">
+      <div class="info-left">
+        <img src="image1.png" alt="Radar tinkr">
+      </div>
+
+      <div class="info-right">
+        <h2>Full Advanced API</h2>
+        <ul>
+          <li>Object Manager</li>
+          <li>Mesh Navigation</li>
+          <li>Fully Scriptable</li>
+          <li>Well Documented</li>
+          <li>Many Bot Options</li>
+        </ul>
+      </div>
+    </div>
+
+<div class="info-row" style="margin-top:60px;">
+
+  <style>
+    .info-row h2 {
+      font-size:32px;
+      font-weight:900;
+      color:#ff3333;
+      margin:0 0 12px 0;
+      line-height:1;
+    }
+
+    .info-row ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
+    .info-row ul li {
+      font-size:24px;
+      font-weight:800;
+      color:#ff3333;
+      margin:0 0 6px 0;
+      line-height:1.15;
+    }
+
+    .info-images {
+      display:flex;
+      align-items:center; 
+      justify-content:center;
+      gap:40px;
+margin-top:-30px;
+    }
+    .info-images img {
+      display:block;
+      height:auto;
+      max-width:100%;
+    }
+  </style>
+
+  <div class="info-right" style="margin-top:0; margin-left:20px;">
+    <h2>Included Utilities</h2>
+    <ul>
+      <li>Advanced Object Manager</li>
+      <li>Free Fishing Bot</li>
+      <li>Telegram Integration</li>
+      <li>wow.vision Integration</li>
+      <li>Objects Window</li>
+      <li>Fishing UI</li>
+    </ul>
+  </div>
+
+  <div class="info-images">
+    <img src="image3.png" alt="Object detect tinkr">
+    <img src="image2.png" alt="Fish wow bot tinkr">
+  </div>
+</div>
+
+  </div>
+</div>
+
+
+
+
+<div class="mt-16">
+  <div class="max-w-4xl mx-auto">
+    <div class="flow-root px-8 py-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+      
+      <h2 class="text-2xl font-bold text-tdark-900 dark:text-tdark-100 text-center mb-6">
+        What is Tinkr?
+      </h2>
+
+      <p class="text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed text-center">
+        Tinkr is a WoW unlocker for macOS and Windows built around a Lua injection engine that gives full access 
+        to the World of Warcraft API. Unlike external bots, Tinkr works inside the game engine and 
+        offers scriptable access to object manager, navigation mesh, combat routines, ESP overlays, 
+        and automation tools. A single token unlocks all game builds including Retail and Classic.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="mt-16">
+  <div class="max-w-4xl mx-auto">
+    <div class="flow-root px-8 py-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+
+      <h2 class="text-2xl font-bold text-tdark-900 dark:text-tdark-100 text-center mb-6">
+        Why use a WoW unlocker on macOS & Windows?
+      </h2>
+
+      <ul class="text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed space-y-2 list-disc max-w-md mx-auto text-left">
+        <li>Native macOS unlocker (Intel + M1/M2)</li>
+        <li>Windows unlocker (Win 10/11)</li>
+        <li>Lua unlocker for Retail and Classic WoW</li>
+        <li>Scriptable bot framework</li>
+        <li>Supports custom scripts</li>
+        <li>Automation API included</li>
+        <li>Free fishing bot included</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="mt-16">
+  <div class="max-w-4xl mx-auto">
+    <div class="flow-root px-8 py-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+
+      <h2 class="text-2xl font-bold text-tdark-900 dark:text-tdark-100 text-center mb-6">
+        How to install Tinkr
+      </h2>
+
+      <ol class="text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed space-y-3 list-decimal max-w-2xl mx-auto text-left">
+
+        <li>Purchase a Tinkr token.</li>
+
+        <li>You will receive an email containing a download link for the launcher.</li>
+
+        <li>Download and run the Tinkr launcher (macOS or Windows).</li>
+
+        <li>Enter your token inside the launcher. If the token is valid, the launcher will authenticate and unlock features.</li>
+
+        <li>If World of Warcraft is detected, Tinkr will launch the game automatically.</li>
+
+        <li>If automatic launch does not work, set your WoW installation path in the configuration file inside the launcher folder.</li>
+
+        <li>Start World of Warcraft normally. When the game loads, look at the bottom of the main menu screen. If installation is successful, you will see: <strong>Tinkr ON</strong> next to the version number.</li>
+
+      </ol>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="mt-16">
+  <div class="max-w-4xl mx-auto">
+    <div class="flow-root px-8 py-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+
+      <h2 class="text-2xl font-bold text-tdark-900 dark:text-tdark-100 text-center mb-6">
+        FAQ
+      </h2>
+
+      <div class="space-y-8">
+
+        <div>
+          <h3 class="text-xl font-semibold text-tdark-900 dark:text-tdark-200">Is Tinkr a WoW unlocker for macOS & Windows?</h3>
+          <p class="mt-2 text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed">
+            Yes, Tinkr is a native unlocker for both macOS and Windows.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-tdark-900 dark:text-tdark-200">Does Tinkr work on WoW Classic?</h3>
+          <p class="mt-2 text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed">
+            Yes, one token unlocks Retail and all Classic versions.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-tdark-900 dark:text-tdark-200">Can I run Lua scripts?</h3>
+          <p class="mt-2 text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed">
+            Yes, Tinkr is a Lua unlocker that enables full access to scripting inside WoW.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-tdark-900 dark:text-tdark-200">Is it safe?</h3>
+          <p class="mt-2 text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed">
+            Tinkr uses a custom engine designed for stability and performance on both platforms.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="mt-16">
+  <div class="max-w-4xl mx-auto">
+    <div class="flow-root px-8 py-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+
+      <h2 class="text-2xl font-bold text-tdark-900 dark:text-tdark-100 text-center mb-6">
+        Tinkr vs traditional WoW unlockers
+      </h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed mx-auto text-left">
+          <tbody class="divide-y divide-tdark-200 dark:divide-tdark-600">
+            <tr><td class="py-2 font-medium">macOS support</td><td class="py-2">Full (Intel & M-series)</td></tr>
+            <tr><td class="py-2 font-medium">Windows support</td><td class="py-2">Full (Win 10/11)</td></tr>
+            <tr><td class="py-2 font-medium">Lua access</td><td class="py-2">Yes</td></tr>
+            <tr><td class="py-2 font-medium">Navigation mesh</td><td class="py-2">Built-in</td></tr>
+            <tr><td class="py-2 font-medium">ESP</td><td class="py-2">Yes</td></tr>
+            <tr><td class="py-2 font-medium">Cost</td><td class="py-2">Single token for all versions</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="mt-16">
+  <div class="max-w-4xl mx-auto">
+    <div class="flow-root px-8 py-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
+
+      <p class="text-base text-tdark-500 dark:text-tdark-300 leading-relaxed text-center">
+        Tinkr is a WoW unlocker for macOS and Windows designed for Lua scripting, UI customization and 
+        automation research. Works on all Retail and Classic World of Warcraft versions. This project 
+        provides an API for custom scripts, navigation meshes, ESP overlays and combat logic.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="pt-6 md:col-span-2 lg:col-span-3">
+                                                    <div class="flow-root text-center">
+                                <div>
+                                    <a class="btn-landing" href="">Get Started Today</a>
+                                </div>
+                                <div class="mt-2">
+                                    <a class="link" href="">Login</a> - <a class="link" href="">Register</a>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="absolute top-20 right-3">
+            <button
+                x-cloak
+                @click="darkMode = !darkMode"
+                id="theme-toggle"
+                type="button"
+                class="text-tdark-500 dark:text-tdark-400 hover:bg-tdark-100 dark:hover:bg-tdark-700 focus:outline-none focus:ring-4 focus:ring-tdark-200 dark:focus:ring-tdark-700 rounded-lg text-sm p-2.5"
+            >
+                <svg
+                    x-show="!darkMode"
+                    id="theme-toggle-dark-icon"
+                    class="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    ></path>
+                </svg>
+                <svg
+                    x-show="darkMode"
+                    id="theme-toggle-light-icon"
+                    class="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                    ></path>
+                </svg>
+            </button>
+        </div>
+    </main>
+</div>
+</body>
+</html>
