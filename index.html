@@ -17,12 +17,11 @@
   "url": "https://tinkr.website/"
 }
 </script>
-<link rel="canonical" href="https://tinkr.website/" />
+<link rel="canonical" href="https://tinkr.website" />
 </head>
 <body class="font-sans antialiased">
 <div class="min-h-screen">
     <main class="static">
-
     <div class="pt-8 pb-10 bg-white dark:bg-tdark-800">
         <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <div class="lg:text-center">
@@ -48,6 +47,25 @@
 
 </div>
 
+
+<!-- DETECTION STATUS START -->
+<div style="display: inline-flex; align-items: center; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); padding: 8px 16px; border-radius: 8px; font-family: 'Segoe UI', Roboto, sans-serif; margin: 10px 0;">
+    <span style="position: relative; display: flex; h: 10px; w: 10px; margin-right: 10px;">
+        <span style="animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite; position: absolute; inline-size: 10px; block-size: 10px; border-radius: 50%; background-color: #10b981; opacity: 0.75;"></span>
+        <span style="position: relative; display: inline-flex; border-radius: 50%; inline-size: 10px; block-size: 10px; background-color: #10b981;"></span>
+    </span>
+    <span style="color: #9ca3af; font-size: 14px; font-weight: 500; margin-right: 6px;">Status:</span>
+    <span style="color: #10b981; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Undetected</span>
+</div>
+
+<style>
+@keyframes ping {
+    75%, 100% { transform: scale(2.5); opacity: 0; }
+}
+</style>
+<!-- DETECTION STATUS END -->
+
+
 <div class="mt-10">
     <div class="max-w-3xl mx-auto">
         <div class="flow-root px-6 py-6 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
@@ -59,10 +77,7 @@
         </div>
     </div>
 </div>
-
-
             </div>
-
             <div class="mt-10 text-center">
                 <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     <div class="pt-6">
@@ -92,7 +107,6 @@
                                 <h3 class="mt-5 text-lg font-medium tracking-tight text-tdark-900 dark:text-tdark-200">Automation</h3>
                                 <p class="mt-3 text-base text-tdark-500 dark:text-tdark-300">
                                     From simple gathering routines to full quest workflows - the Automator API gives you everything needed for reliable in-game automation.
-
                                 </p>
                             </div>
                         </div>
@@ -162,6 +176,27 @@ Works on Intel and Apple Silicon Macs, plus Windows PCs, delivering the same hig
                             </div>
                         </div>
                     </div>
+
+
+
+                    <!-- SECURITY SECTION START -->
+<div style="background: linear-gradient(135deg, #1e1e2e 0%, #11111b 100%); border: 1px solid #313244; border-radius: 16px; padding: 32px; max-width: 600px; margin: 20px auto; font-family: 'Segoe UI', Roboto, sans-serif; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+        <div style="background: #2563eb; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; margin-right: 15px; box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);">✓</div>
+        <h3 style="color: #cdd6f4; margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.5px;">Advanced Security</h3>
+    </div>
+    <p style="color: #a6adc8; font-size: 15px; line-height: 1.6; margin-top: 0; margin-bottom: 20px;">
+        Tinkr is built with a deep focus on stealth. It operates efficiently without modifying critical game core memory permanently, ensuring maximum safety during your gameplay.
+    </p>
+    <ul style="margin: 0; padding-left: 20px; color: #bac2de; font-size: 14px; line-height: 1.8;">
+        <li style="margin-bottom: 8px;"><strong style="color: #f38ba8;">Warden Bypass:</strong> Cutting-edge injection methods designed to stay completely invisible to automated anti-cheat systems.</li>
+        <li style="margin-bottom: 8px;"><strong style="color: #cba6f7;">No Data Harvesting:</strong> We do not collect, store, or transmit your account credentials, personal data, or private tokens.</li>
+        <li style="margin-bottom: 0;"><strong style="color: #89b4fa;">Silicon Native:</strong> Full native support for Apple Silicon (M1/M2/M3) and Intel architectures ensures stable performance without crashes.</li>
+    </ul>
+</div>
+<!-- SECURITY SECTION END -->
+
+
 
 <div class="pt-6 md:col-span-2 lg:col-span-3">
   <div class="flow-root h-full px-6 pb-8 rounded-lg shadow-sm bg-tdark-50 dark:bg-tdark-700">
@@ -365,23 +400,12 @@ margin-top:-30px;
       </h2>
 
       <ol class="text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed space-y-3 list-decimal max-w-2xl mx-auto text-left">
-
-        <li>Purchase a Tinkr token.</li>
-
-        <li>You will receive an email containing a download link for the launcher.</li>
-
-        <li>Download and run the Tinkr launcher (macOS or Windows).</li>
-
+        <li>Download from GitHub and run the Tinkr launcher (macOS or Windows).</li>
         <li>Enter your token inside the launcher. If the token is valid, the launcher will authenticate and unlock features.</li>
-
         <li>If World of Warcraft is detected, Tinkr will launch the game automatically.</li>
-
         <li>If automatic launch does not work, set your WoW installation path in the configuration file inside the launcher folder.</li>
-
         <li>Start World of Warcraft normally. When the game loads, look at the bottom of the main menu screen. If installation is successful, you will see: <strong>Tinkr ON</strong> next to the version number.</li>
-
       </ol>
-
     </div>
   </div>
 </div>
@@ -396,7 +420,6 @@ margin-top:-30px;
       </h2>
 
       <div class="space-y-8">
-
         <div>
           <h3 class="text-xl font-semibold text-tdark-900 dark:text-tdark-200">Is Tinkr a WoW unlocker for macOS & Windows?</h3>
           <p class="mt-2 text-lg text-tdark-500 dark:text-tdark-300 leading-relaxed">
@@ -516,5 +539,97 @@ margin-top:-30px;
         </div>
     </main>
 </div>
+
+<!-- CLOSED BETA SECTION START -->
+<div style="background: linear-gradient(135deg, #181825 0%, #11111b 100%); border: 2px dashed #f38ba8; border-radius: 20px; padding: 40px; max-width: 700px; margin: 40px auto; text-align: center; font-family: 'Segoe UI', Roboto, sans-serif; box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
+    <span style="background: #f38ba8; color: #11111b; font-size: 11px; font-weight: 800; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; letter-spacing: 1px; display: inline-block; margin-bottom: 15px;">Limited Intake</span>
+    <h2 style="color: #cdd6f4; margin: 0 0 15px 0; font-size: 28px; font-weight: 800;">Tinkr — Closed Beta Testing for WoW: Forever</h2>
+    <p style="color: #a6adc8; font-size: 15px; line-height: 1.6; max-width: 550px; margin: 0 auto 25px auto;">
+        We are building the first dedicated Lua-unlocker fully optimized for the new <span style="color: #f9e2af; font-weight: 600;">WoW: Forever</span> architecture. We are strictly looking for experienced players, class-profile developers, and enthusiasts to run stress tests, navigation mesh reports, and logic verification. Access is entirely free during the R&D stage.
+    </p>
+    
+    <div style="background: rgba(17, 17, 27, 0.6); border: 1px solid #313244; border-radius: 12px; padding: 20px; margin-bottom: 30px; text-align: left;">
+        <h4 style="color: #cdd6f4; margin: 0 0 10px 0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">How to apply via Email:</h4>
+        <p style="color: #9ca3af; font-size: 13px; line-height: 1.5; margin: 0;">
+            Send your application to <a href="mailto:beta@tinkr.website" style="color: #f38ba8; text-decoration: none; font-weight: 600;">beta@tinkr.website</a>. Include your previous Lua-software experience, your PC/Mac specifications, and what you aim to test (e.g., rotation scripting, leveling automation, mesh handling).
+        </p>
+    </div>
+
+    <a href="mailto:beta@tinkr.website?subject=Tinkr%20WoW%20Forever%20Beta%20Application" style="display: inline-block; background: #f38ba8; color: #11111b; font-weight: 700; font-size: 15px; text-decoration: none; padding: 14px 32px; border-radius: 10px; transition: all 0.2s ease; box-shadow: 0 4px 20px rgba(243, 139, 168, 0.3);">
+        Apply for Beta Access
+    </a>
+</div>
+<!-- CLOSED BETA SECTION END -->
+
+<!-- FOOTER START -->
+<footer style="background: #11111b; border-top: 1px solid #313244; padding: 40px 20px; font-family: 'Segoe UI', Roboto, sans-serif; color: #a6adc8; font-size: 14px; margin-top: 60px;">
+    <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 30px;">
+        
+        <!-- Brand & Support Column -->
+        <div style="flex: 1; min-width: 250px;">
+            <div style="color: #cdd6f4; font-weight: 800; font-size: 20px; margin-bottom: 12px; letter-spacing: -0.5px;">Tinkr</div>
+            <p style="font-size: 13px; line-height: 1.5; color: #6c7086; margin: 0 0 15px 0;">Advanced, secure, and automated solutions for Mac and Windows environments.</p>
+            <div style="font-size: 13px;">
+                <span style="color: #9ca3af;">Support Contact:</span> 
+                <a href="mailto:support@tinkr.website" style="color: #cba6f7; text-decoration: none; font-weight: 600; margin-left: 5px;">support@tinkr.website</a>
+            </div>
+        </div>
+
+        <!-- Links Column -->
+        <div style="display: flex; gap: 40px;">
+            <div>
+                <h5 style="color: #cdd6f4; margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">Community</h5>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 2;">
+                    <li><a href="#" style="color: #a6adc8; text-decoration: none;">Discord Server</a></li>
+                    <li><a href="#" style="color: #a6adc8; text-decoration: none;">Telegram Feed</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 style="color: #cdd6f4; margin: 0 0 12px 0; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">Legal</h5>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 2;">
+                    <li><a href="#terms" style="color: #a6adc8; text-decoration: none; transition: color 0.2s;">Terms of Service</a></li>
+                    <li><a href="#policy" style="color: #a6adc8; text-decoration: none; transition: color 0.2s;">Privacy & Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- LEGAL DOCUMENTS SECTION START -->
+<div style="max-width: 800px; margin: 60px auto; padding: 0 20px; font-family: 'Segoe UI', Roboto, sans-serif; color: #a6adc8;">
+    
+    <!-- Terms of Service Box -->
+    <div id="terms" style="background: #181825; border: 1px solid #313244; border-radius: 12px; padding: 25px; margin-bottom: 30px; scroll-margin-top: 20px;">
+        <h3 style="color: #cdd6f4; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 1px solid #313244; padding-bottom: 10px;">Terms of Service</h3>
+        <div style="font-size: 13px; line-height: 1.6; max-height: 200px; overflow-y: auto; color: #9ca3af; padding-right: 10px;">
+            <p>1. Acceptance of Terms: By applying to or participating in the Tinkr Closed Beta, you fully agree to these terms.</p>
+            <p>2. Nature of Software: Tinkr provides modification and research software tools for automation purposes. The software is provided "as-is" without any express warranties.</p>
+            <p>3. Risk Acknowledgment: You understand and explicitly acknowledge that using third-party software in World of Warcraft may violate the game's End User License Agreement (EULA). Tinkr is not responsible for any actions taken against your game accounts, including suspensions or bans.</p>
+            <p>4. Reverse Engineering: You agree not to decompile, reverse engineer, unpack, or attempt to extract the source code of the Tinkr launcher or associated binaries.</p>
+        </div>
+    </div>
+
+    <!-- Privacy & Refund Policy Box -->
+    <div id="policy" style="background: #181825; border: 1px solid #313244; border-radius: 12px; padding: 25px; scroll-margin-top: 20px;">
+        <h3 style="color: #cdd6f4; margin-top: 0; margin-bottom: 15px; font-size: 18px; border-bottom: 1px solid #313244; padding-bottom: 10px;">Privacy & Refund Policy</h3>
+        <div style="font-size: 13px; line-height: 1.6; max-height: 200px; overflow-y: auto; color: #9ca3af; padding-right: 10px;">
+            <p><strong>Privacy Statement:</strong> Tinkr respects your digital privacy. Our launcher operates locally and does not actively gather, scrap, or upload your private credentials, personal identities, game login tokens, or environmental sensitive logs unrelated to software debugging.</p>
+            <p><strong>Debugging Data:</strong> Any automated logs submitted during the closed beta phase are anonymous and utilized exclusively to track mesh navigation inaccuracies, execution crashes, and script processing errors.</p>
+            <p><strong>Refund Policy:</strong> Because the Tinkr Closed Beta for WoW: Forever is currently fully non-commercial and provided completely free of charge for approved testing profiles, no payment actions occur, and no refund mechanisms apply.</p>
+        </div>
+    </div>
+
+</div>
+<!-- LEGAL DOCUMENTS SECTION END -->
+    
+    <div style="max-width: 1000px; margin: 30px auto 0 auto; padding-top: 20px; border-top: 1px solid rgba(49, 50, 68, 0.4); text-align: center; font-size: 12px; color: #585b70;">
+        &copy; 2026 Tinkr. All rights reserved. WoW Forever is a trademark of Blizzard Entertainment. We are not affiliated with Blizzard.
+    </div>
+</footer>
+<!-- FOOTER END -->
+
+
+
+
 </body>
 </html>
