@@ -1,5 +1,18 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*(.*)",
+      "has": [
+        {
+          "type": "query",
+          "key": "(.*)"
+        }
+      ],
+      "destination": "/404",
+      "permanent": false
+    }
+  ],
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/404.html", "status": 404 }
